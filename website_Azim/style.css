@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdf2d0; /* Soft Warm Yellow */
+    color: #3e2723;           /* Darkest Brown for text */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.hero {
+    background-color: #5d4037; /* Wooden Brown */
+    color: #ffffff;
+    padding: 60px 20px 80px 20px; 
+    border-bottom: 5px solid #8b5e3c; /* Accent brown border */
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #ffecb3; /* Light yellow text on brown */
+    margin-bottom: 40px;
+}
+
+/* Button Navigation */
+.button-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-btn {
+    background: #ffffff;
+    color: #5d4037; 
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px; 
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+
+.nav-btn.active {
+    background: #8b5e3c; /* Active button uses the accent brown */
+    color: white;
+}
+
+.nav-btn:hover {
+    background: #d2b48c; /* Tan hover color */
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Content Area */
+.container {
+    max-width: 800px;
+    margin: 50px auto; 
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #5d4037;
+}
+
+.tagline {
+    font-style: italic;
+    color: #8b5e3c; 
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.description {
+    color: #4e342e;
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+}
+
+/* Contact Styling */
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-link {
+    color: #8b5e3c; 
+    font-weight: bold; 
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 5px 0;
+    transition: 0.2s;
+}
+
+.contact-link:hover {
+    color: #5d4037;
+    text-decoration: underline;
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #5d4037; 
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px; 
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(93, 64, 55, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #8b5e3c;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 60px 20px;
+    font-size: 0.85rem;
+    color: #795548;
+}

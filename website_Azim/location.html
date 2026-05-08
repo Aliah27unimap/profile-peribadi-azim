@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi | Muhammad Nur Azim</title>
+    
+    <style>
+        /* Colour Palette Berdasarkan Gambar Rujukan */
+        :root {
+            --dark-brown: #5d4037;
+            --mid-brown: #8b5e3c;
+            --light-tan: #b59069;
+            --bg-cream: #f9f5f0;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-cream);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--dark-brown);
+        }
+
+        /* Header (Bahagian Coklat Gelap) */
+        header {
+            background-color: var(--dark-brown);
+            padding: 40px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        header h1 {
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 5px 0 20px;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        /* Butang Navigasi (Dibetulkan supaya tidak putih kosong) */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            color: var(--white); /* Teks warna putih */
+            border: 1px solid var(--white); /* Garisan kotak putih */
+            padding: 8px 25px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+            background-color: transparent; /* Latar belakang ikut header */
+        }
+
+        .nav-btn:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* Butang Aktif (Warna Tan/Coklat Muda) */
+        .nav-btn.active {
+            background-color: var(--light-tan);
+            border-color: var(--light-tan);
+            color: var(--white);
+        }
+
+        /* Kandungan Utama */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        /* Layout Grid Kad Maklumat */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        /* Gaya Kad Putih (Sama seperti Biodata/Perkhidmatan) */
+        .info-card {
+            background-color: var(--white);
+            border-radius: 15px;
+            text-align: left;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border-left: 8px solid var(--mid-brown);
+        }
+
+        .info-card h3 {
+            color: var(--dark-brown);
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .access-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .access-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .access-list li::before {
+            content: "📍";
+            position: absolute;
+            left: 0;
+        }
+
+        .highlight-text {
+            color: var(--mid-brown);
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MUHAMMAD NUR AZIM BIN SAMSURI</h1>
+        <p>Malim Gunung & Pengurus Aktiviti Rekreasi Perlis</p>
+        <div class="nav-container">
+            <a href="index.html" class="nav-btn">Utama</a>
+            <a href="about.html" class="nav-btn">Biodata</a>
+            <a href="role.html" class="nav-btn">Perkhidmatan</a>
+            <a href="location.html" class="nav-btn active">Lokasi</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="title-section">
+            <h2>Lokasi & Panduan Perjalanan</h2>
+            <p>Pusat Operasi: <span class="highlight-text">Gua Kelam, Kaki Bukit, Perlis</span></p>
+        </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Alamat Rasmi</h3>
+                <p><strong>Gua Kelam</strong><br>
+                Kaki Bukit, 02200 Kaki Bukit,<br>
+                Perlis, Malaysia.</p>
+                <p><em>Sila berkumpul di perkarangan parkir utama Gua Kelam sebelum aktiviti bermula.</em></p>
+            </div>
+
+            <div class="info-card">
+                <h3>Dari Kuala Lumpur (Lembah Klang)</h3>
+                <ul class="access-list">
+                    <li>Naik <strong>ETS</strong> dari KL Sentral ke <span class="highlight-text">Stesen KTM Padang Besar</span>.</li>
+                    <li>Dari stesen KTM, anda boleh mengambil perkhidmatan <strong>Grab/Teksi</strong> ke Gua Kelam (sekitar 15-20 minit).</li>
+                    <li>Anggaran tambang Grab: <span class="highlight-text">RM15 - RM25</span>.</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Dari Negeri Selatan</h3>
+                <ul class="access-list">
+                    <li>Gunakan <strong>Lebuhraya PLUS</strong> menghala ke Utara. Ambil susur keluar <span class="highlight-text">Changlun/Kuala Perlis</span>.</li>
+                    <li>Teruskan perjalanan ke arah Kaki Bukit melalui jalan dalam yang menyajikan pemandangan bukit batu kapur.</li>
+                    <li>Jika naik Bas, turun di <strong>Terminal Bas Kangar</strong> dan ambil Grab ke Gua Kelam.</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Dari Pantai Timur</h3>
+                <ul class="access-list">
+                    <li>Gunakan <strong>Lebuhraya Timur-Barat</strong> melalui Gerik ke Baling dan terus ke Kedah/Perlis.</li>
+                    <li>Perjalanan memakan masa sekitar 6-8 jam. Pastikan kenderaan dalam keadaan baik untuk melalui kawasan pergunungan.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Profil Peribadi Muhammad Nur Azim.
+    </footer>
+
+</body>
+</html>
